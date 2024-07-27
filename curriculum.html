@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wee School Preschool Curriculum</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: block;
+            margin: 0;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header{
+            background-color: #1D85C5;
+            color: white;
+            position: sticky;
+            top:0;
+        }
+        ul{
+            min-height: 66.22px;
+            display: flex;
+            justify-content: center;
+            gap: 30px ;
+            list-style: none;
+            align-items: center;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .mainbuttons{
+            transition:  background-color 0.7s, color 0.7s, font-weight 0.7s, border 0.7s;
+        }
+        
+        .mainbuttons:hover{
+            background-color: white;
+            color: #1D85C5;
+            font-weight: 400;
+            border: 0.3px solid #1D85C5;
+        }
+        ul li .mainbuttons{
+            text-decoration: none;
+            background-color: #343D6C;
+            border-radius: 8.102px;
+            color: white;
+            padding: 7px 9.11px;
+
+        }
+        ul li img{
+            width: 20px;
+            height: 20px;
+            vertical-align: bottom;
+            margin: 0 5px;
+            
+        }
+        .banner{
+            min-height: 180.86px;
+            background-color: white;
+        }
+        .banner h1{
+            text-align: center;
+            display: block;
+            font-family: Monotype corsiva;
+            font-size: 64.79px;
+            margin: 30px 0 10px;
+            font-weight: 100;
+            color: #333366;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+        }
+        .buttons button{
+            background-color: #604CA0;
+            padding: 5px 8px;
+            border-radius: 8px;
+            margin-left: 10px;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            color: white;
+            border: none;
+            cursor:pointer;
+        }
+
+        .info{
+            width: 100%;
+            height: 100%;
+            background-color: #1D85C5;
+            display: block;
+            padding: 70px 159.99px;
+        }
+        .info p{
+            color: white;
+            font-size: 22px;
+            font-style: italic;
+            margin: 35px 0;
+            
+        }
+        .info img{
+            object-fit: cover;
+            width: 30%;
+            height: 457.22px;
+            display: inline;
+            margin-right: 40px;
+            border-radius: 10px;
+        }
+        .arrowitems{
+            display: grid;
+            grid-template-columns: 300px 300px;
+        }
+        .arrowitems p{
+            text-decoration: underline;
+
+        }
+        .arrowitems img{
+            display: inline;
+            float: right; 
+            height: 70px;
+            width: 90px;
+            animation: pulse-animation 1.1s infinite;
+        }
+
+        @keyframes pulse-animation {
+        0% {
+        transform: translateX(0);
+        }
+        50% {
+        transform: translateX(-10px);
+        }
+        100% {
+        transform: translateX(0);
+        }
+        }
+        .arrowitems p{
+            margin: 10px 10px 20px 0;
+        }
+        .pages{
+            margin-top: 30px;
+        }
+        .pages img{
+            height: 457.22px;
+            width: auto;
+            object-fit: cover;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+        .headings{
+            display: flex;
+        }
+        .headings h2{
+            background-color: #604CA0;
+            color:white;
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-size: 28px;
+            font-weight: 400;
+            
+        }
+        footer ul{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center; 
+            height: 66.22px;
+            background-color: white;
+            color: white;  
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>  
+            <ul>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=weepreschoolerieco@gmail.com"><img src="Links/mailicon.png" alt="" >weepreschoolerieco@gmail.com</a></li>
+            <li><img src="Links/phoneicon.png" alt="">303.828.2939</li>
+            <li ><a class="mainbuttons" href="curriculum.html">Curriculum</a></li>
+            <li ><a class="mainbuttons" href="enrollnow.html">Enroll Now</a></li>
+            <li ><a class="mainbuttons" href="contactus.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>Curriculum</h1>
+            <div class="buttons">
+            <button>Preschool 3-4 years old</button>
+            <button>Kinder prep 4-5 years old</button>
+        </div>
+        </div>
+
+        <div class="info">
+            <p>The Wee School offers programs for children 2 ¾ to 6 years of age.</p>
+            <p>Our classes consist of free exploration time, story time, calendar, learning centers, small group instruction, snack time and recess.</p>
+            <p>Our class times are:</p>
+            <p>Preschool full days ( Tuesdays and Thursdays) 8:45-2:45 (12 hours)<br>
+                Kinder prep full days ( Monday/Wednesday/Friday) 8:45-2:45 (18 hours)<br>
+                5 full days 3-4 year old ( Monday thru Friday) 9:00-3:12 ( 31 hrs)</p>
+                <div class="arrowitems">
+                <p>Before school 7:45-8:45 am. <br>After School 3:00 -5:00 pm</p>
+                <!-- <img id="arrowimg" src="Links/arrow.png" alt=""> -->
+                </div>
+                <img src="Links/WhatsApp Image 2024-07-13 at 07.36.45.jpeg" alt="">
+                <img src="Links/WhatsApp Image 2024-07-13 at 07.36.02.jpeg" alt="">
+            <section class="pages">
+                <div class="headings">
+                    <h2>Preschool 3-4 years old</h2>
+                </div>
+                <p>This age is all about expression, form their own ideas and play while discovery and creating. 
+                </p>
+                <p>At the Wee School Preschool, your child will learn while making experiments, using art and play pretend, all the skills needed for the next milestone - KINDERGARTEN! Also, they will learn basic handwriting (tracing), numeracy and phonics will be introduced in this class. 
+                </p>
+                <img src="Links/WhatsApp Image 2024-07-13 at 07.35.59 (1).jpeg" alt="">
+                <div class="headings">
+                    <h2>Kinder prep 4-5 years old</h2>
+                </div>
+                <p>The Wee School Preschool provides an introduction to the skills used in kindergarten.
+                </p>
+                <p>We will focus on upper and lower case letters, letter sounds, reading readiness, writing, math concepts and much more. Children in this class will also have opportunities for creative play and experiential learning. Children leaving this class will be prepared for success in kindergarten.
+                </p>
+                <img src="Links/WhatsApp Image 2024-07-13 at 07.36.03.jpeg" alt="">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a class="mainbuttons" href="curriculum.html">Curriculum</a></li>
+            <li><a class="mainbuttons"href="enrollnow.html">Enroll Now</a></li>
+            <li><a class="mainbuttons"href="">Contact Us</a></li>
+        </ul>
+        </footer>
+    
+</body>
+</html>

@@ -19,36 +19,36 @@
             margin: 0;
             font-family: Calibri, 'Trebuchet MS', sans-serif;
         }
-
         header{
-            width: 100%;
-            height: 66.22px;
             background-color: #1D85C5;
-            display: flex;
             color: white;
-            justify-content: center;
             position: sticky;
             top:0;
         }
         ul{
-            margin-top: 20px;
+            min-height: 66.22px;
             display: flex;
+            justify-content: center;
             gap: 30px ;
             list-style: none;
             align-items: center;
 
         }
-        a{
+        .mainbuttons{
             transition:  background-color 0.7s, color 0.7s, font-weight 0.7s, border 0.7s;
         }
         
-        a:hover{
+        .mainbuttons:hover{
             background-color: white;
             color: #1D85C5;
             font-weight: 600;
             border: 1px solid #1D85C5;
         }
         ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        ul li .mainbuttons{
             text-decoration: none;
             background-color: #343D6C;
             border-radius: 8.102px;
@@ -63,9 +63,10 @@
             margin: 0 5px;
             
         }
+
         .banner{
             width: 100%;
-            height: 389.81px;
+            min-height: 389.81px;
             color: #343D6C;
         }
         .banner h1{
@@ -104,19 +105,20 @@
             height: 100%;
             background-color: #1D85C5;
             display: block;
-            padding: 49.83px 159.99px;
+            padding: 70px 159.99px;
         }
 
         .firstsection img{
             width: 100%;
             height: 352.56px;
             object-fit: cover;
+            border-radius: 10px;
         } 
 
         .firstsection{
             display: grid;
             grid-template-columns: 1fr 1fr ;
-            gap: 25px;
+            gap: 40px;
         }
         .bigtext{
             grid-column: 2 span;
@@ -129,6 +131,14 @@
             font-style: italic;
             font-size: 18px;
         }
+        .numbers{
+            border-left: 3px solid white;
+            padding-left:25px;
+        }
+        #border{
+            border-right: 3px solid white;
+            padding-right:25px;
+        }
         .numbers img{
             width: 200px;
             height: 200px;
@@ -136,48 +146,67 @@
             margin: 0 auto;
         }
         
-        .numbers #note{
-            font-size: 12px;
-            margin-top: 10px;
-        }
         .secondsection{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 15px;
+            gap: 40px;
             margin-top: 40px;
         }
         .secondsection img{
             width: 100%;
             height: 421.22px;
             object-fit: cover;
-
-
-        }
-        footer{
-            width: 100%;
-            height: 66.22px;
-            background-color: white;
-            display: flex;
-            color: white;
-            justify-content: center; 
+            border-radius: 10px;
         }
         footer ul{
             display: flex;
             align-items: center;
-            margin: 0 auto
+            margin: 0 auto;
+            justify-content: center; 
+            height: 66.22px;
+            background-color: white;
+            color: white;  
         }
         @media(max-width:768px){
-            body{
-                max-width: 768px;
-                height: 100%;
-            }
             header{
+                position: static;
+            }
+            ul{
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                height: 100%;
-                width: 100%;
+                padding: 20px;
             }
+            /* .banner h1{
+                color: transparent;
+                background-image: url('Links/background-image.png');
+                background-position: 10px -50px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 1px solid blue;
+                height: 75px;
+            } */
+            .numbers{
+            border-left: 3px solid white;
+            border-right:3px solid white;
+            padding-left:25px;
+            padding-right: 25px;
+        }
+            .info{
+                padding: 10px;
+            }
+            .firstsection{
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            .secondsection{
+                gap:20px;
+            }
+            .secondsection img{
+                height:200px;
+            }
+
         }
     </style>
 </head>
@@ -185,11 +214,12 @@
     <header>
     <nav>  
         <ul>
-        <li><img src="Links/mailicon.png" alt="">weepreschoolerieco@gmail.com</li>
+        <!-- <li><a href=https://mail.google.com/mail/?view=cm&fs=1&to=weepreschoolerieco@gmail.com&su=Hello&body=Hi%20there!><img src="Links/mailicon.png" alt="" >weepreschoolerieco@gmail.com</a></li> -->
+        <li><a href=https://mail.google.com/mail/?view=cm&fs=1&to=weepreschoolerieco@gmail.com><img src="Links/mailicon.png" alt="" >weepreschoolerieco@gmail.com</a></li>
         <li><img src="Links/phoneicon.png" alt="">303.828.2939</li>
-        <li><a href="">Curriculum</a></li>
-        <li><a href="">Enroll Now</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li ><a class="mainbuttons" href="curriculum.html">Curriculum</a></li>
+        <li ><a class="mainbuttons" href="enrollnow.html">Enroll Now</a></li>
+        <li ><a class="mainbuttons" href="contactus.html">Contact Us</a></li>
     </ul>
     </nav>
 </header>
@@ -207,11 +237,12 @@
             <div class="bigtext"><p>The Wee School Preschool is a family owned preschool located in the heart of Erie, CO.
             </p></div>
             <div class="bigtext"><p>Licensed by the State of Colorado, we offer preschool 3s and Kinder prep (4-5 years old). The Wee School Preschool is an academic based preschool with an after school care option. We offer a safe, warm learning environment, which enables children to succeed in  their academic, social and physical development, thus enhancing self esteem and creating a positive early learning experience.</p></div>
-        
+
             <div class="bigtext"><p>The Wee School focuses on two main objectives:</p></div>
-            <div class="numbers"><img src="Links/1.png" alt=""><p>Provide academic instruction: we focus on literacy (speaking, listening, reading and writing) instruction, which is age appropriate and meets the needs of the children. 
-            </p><p id="note">We also provide instruction in the areas of math, science, social studies, art and spanish. 	</p></div>
-            <div class="numbers"><img src="Links/2.png" alt=""><p>Enrich the whole child: we strive to educate the child holistically, including their social emotional well being with the main goal of the child's long term success.     
+
+            <div class="numbers"><img src="Links/Mesa de trabajo 6 copia.png" alt=""><p>Provide academic instruction: we focus on literacy (speaking, listening, reading and writing) instruction, which is age appropriate and meets the needs of the children. We also provide instruction in the areas of math, science, social studies, art and spanish.</p></div>
+            
+            <div class="numbers" id="border"><img src="Links/Mesa de trabajo 6 copia 2.png" alt=""><p>Enrich the whole child: we strive to educate the child holistically, including their social emotional well being with the main goal of the child's long term success.     
             </p></div>            
         </section>
         <section class="secondsection">
@@ -223,9 +254,9 @@
 </main>
 <footer>
 <ul>
-    <li><a href="">Curriculum</a></li>
-    <li><a href="">Enroll Now</a></li>
-    <li><a href="">Contact Us</a></li>
+    <li><a class="mainbuttons" href="curriculum.html">Curriculum</a></li>
+    <li><a class="mainbuttons"href="enrollnow">Enroll Now</a></li>
+    <li><a class="mainbuttons"href="">Contact Us</a></li>
 </ul>
 </footer>
     
